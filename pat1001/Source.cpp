@@ -4,14 +4,15 @@
 using namespace::std;
 
 int main(){
-	int a, b;
+	int a, b, c, d[10] = { 0 };
 	cin >> a >> b;
-	int c = a + b;
-	int d[10] = { 0 };
+	c = a + b;
+
 	int flag = 0;
 	if (c < 0){
 		flag = 1;
 	}
+
 	int i = 0;
 	while (abs(c) != 0){
 		d[i++] = abs(c) % 1000;
