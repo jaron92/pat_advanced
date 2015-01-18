@@ -1,3 +1,4 @@
+/*²ÎÕÕÁË´úÂëhttp://blog.csdn.net/sunbaigui/article/details/8657030*/
 #include <iostream>
 
 using namespace::std;
