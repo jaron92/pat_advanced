@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pat1018", "pat1018\pat1018.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pat1019", "pat1019\pat1019.vcxproj", "{ABC42730-C1AC-4C7B-8232-0DCDD4B3C490}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pat1020", "pat1020\pat1020.vcxproj", "{EFDCD58F-63DB-477A-A660-1EDEE799E225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -123,6 +125,10 @@ Global
 		{ABC42730-C1AC-4C7B-8232-0DCDD4B3C490}.Debug|Win32.Build.0 = Debug|Win32
 		{ABC42730-C1AC-4C7B-8232-0DCDD4B3C490}.Release|Win32.ActiveCfg = Release|Win32
 		{ABC42730-C1AC-4C7B-8232-0DCDD4B3C490}.Release|Win32.Build.0 = Release|Win32
+		{EFDCD58F-63DB-477A-A660-1EDEE799E225}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFDCD58F-63DB-477A-A660-1EDEE799E225}.Debug|Win32.Build.0 = Debug|Win32
+		{EFDCD58F-63DB-477A-A660-1EDEE799E225}.Release|Win32.ActiveCfg = Release|Win32
+		{EFDCD58F-63DB-477A-A660-1EDEE799E225}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
