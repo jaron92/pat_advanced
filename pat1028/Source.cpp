@@ -4,7 +4,6 @@
 #include <cstring>
 #include <algorithm>
 #include <cstdio>
-#include <vector>
 using namespace::std;
 
 typedef struct stu
@@ -14,8 +13,7 @@ typedef struct stu
 	int grade;
 }stu;
 
-//stu stulist[100000];
-vector<stu> stulist;
+stu stulist[100000];
 
 bool CompareById(stu a, stu b){
 	return strcmp(a.id, b.id) < 0;
@@ -39,35 +37,29 @@ int main(){
 	char id[10], name[10];
 	scanf("%d%d", &n, &c);
 	for (int i = 0; i < n; i++){
-		//stu *item = stulist + i;
+		stu *item = stulist + i;
 		//cin >> item->id;
 		//cin >> item->name;
 		//cin >> item->grade;
-		stu *item = new stu;
 		scanf("%s%s%d", item->id, item->name, &item->grade);
-		stulist.push_back(*item);
 	}
 
 	switch (c)
 	{
 	case 1:
-		//sort(stulist, stulist+n, CompareById);
-		sort(stulist.begin(), stulist.end(), CompareById);
+		sort(stulist, stulist + n, CompareById);
 		break;
 	case 2:
-		//sort(stulist, stulist + n, CompareByName);
-		sort(stulist.begin(), stulist.end(), CompareByName);
+		sort(stulist, stulist + n, CompareByName);
 		break;
 	case 3:
-		//sort(stulist, stulist + n, CompareByGrade);
-		sort(stulist.begin(), stulist.end(), CompareByGrade);
+		sort(stulist, stulist + n, CompareByGrade);
 		break;
 	default:
 		break;
 	}
-	//for (int i = 0; i < n; i++){
-		//stu *it = stulist + i;
-	for (vector<stu>::iterator it = stulist.begin(); it != stulist.end();it++){
+	for (int i = 0; i < n; i++){
+		stu *it = stulist + i;
 		printf("%s %s %d\n", it->id, it->name, it->grade);
 	}
 }
