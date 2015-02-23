@@ -38,22 +38,20 @@ int main(){
 		for (int i = 0; i < sig1.size(); i++){
 			cout << sig1[i];
 		}
-		if (k1 != 0)
-			cout << "*10^" << k1 << endl;
-	}else{
+		cout << "*10^" << k1 << endl;
+	}
+	else{
 		cout << "NO ";
 		cout << "0.";
 		for (int i = 0; i < sig1.size(); i++){
 			cout << sig1[i];
 		}
-		if (k1 != 0)
-			cout << "*10^" << k1;
+		cout << "*10^" << k1;
 		cout << " 0.";
 		for (int i = 0; i < sig2.size(); i++){
 			cout << sig2[i];
 		}
-		if (k2 != 0)
-			cout << "*10^" << k2 << endl;
+		cout << "*10^" << k2 << endl;
 	}
 	return 0;
 }
